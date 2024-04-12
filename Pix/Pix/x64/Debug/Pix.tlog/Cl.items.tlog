@@ -1,14 +1,15 @@
-C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\CmdDrawPixel.cpp;C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\x64\Debug\CmdDrawPixel.obj
-C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\CmdSetColor.cpp;C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\x64\Debug\CmdSetColor.obj
-C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\CmdSetResolution.cpp;C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\x64\Debug\CmdSetResolution.obj
-C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\CmdVarFloat.cpp;C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\x64\Debug\CmdVarFloat.obj
-C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\CommandDictionary.cpp;C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\x64\Debug\CommandDictionary.obj
-C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\Graphics.cpp;C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\x64\Debug\Graphics.obj
-C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\MathHelper.cpp;C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\x64\Debug\MathHelper.obj
-C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\PixEditor.cpp;C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\x64\Debug\PixEditor.obj
-C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\Rasterizer.cpp;C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\x64\Debug\Rasterizer.obj
-C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\ScriptParser.cpp;C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\x64\Debug\ScriptParser.obj
-C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\TextEditor.cpp;C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\x64\Debug\TextEditor.obj
-C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\VariableCache.cpp;C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\x64\Debug\VariableCache.obj
-C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\Viewport.cpp;C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\x64\Debug\Viewport.obj
-C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\WinMain.cpp;C:\Users\LCV2242922\source\repos\3DGraphicsSp24\Pix\Pix\x64\Debug\WinMain.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdDrawPixel.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdDrawPixel.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdForLoop.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdForLoop.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdSetColor.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdSetColor.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdSetResolution.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdSetResolution.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdVarFloat.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdVarFloat.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CommandDictionary.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CommandDictionary.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\Graphics.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\Graphics.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\MathHelper.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\PixEditor.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\PixEditor.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\Rasterizer.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\Rasterizer.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\ScriptParser.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\ScriptParser.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\TextEditor.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\TextEditor.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\VariableCache.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\VariableCache.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\Viewport.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\Viewport.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\WinMain.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\WinMain.obj

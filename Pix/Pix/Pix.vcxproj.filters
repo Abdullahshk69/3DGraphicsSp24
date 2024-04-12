@@ -39,9 +39,6 @@
     <None Include="Scripts\test.pix">
       <Filter>Scripts</Filter>
     </None>
-    <None Include="Scripts\triangles.pix">
-      <Filter>Scripts</Filter>
-    </None>
     <None Include="Scripts\triangles2.pix">
       <Filter>Scripts</Filter>
     </None>
@@ -61,6 +58,15 @@
       <Filter>Scripts</Filter>
     </None>
     <None Include="Scripts\3d_texturing_perspective.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\box.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\ness.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\triangle.pix">
       <Filter>Scripts</Filter>
     </None>
   </ItemGroup>
@@ -104,6 +110,9 @@
     </ClCompile>
     <ClCompile Include="MathHelper.cpp">
       <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdForLoop.cpp">
+      <Filter>Commands</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +163,9 @@
     </ClInclude>
     <ClInclude Include="MathHelper.h">
       <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdForLoop.h">
+      <Filter>Commands</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
