@@ -1,4 +1,7 @@
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdAddVertex.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdAddVertex.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdBeginDraw.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdBeginDraw.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdDrawPixel.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdDrawPixel.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdEndDraw.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdEndDraw.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdForLoop.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdForLoop.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdSetColor.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdSetColor.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdSetResolution.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdSetResolution.obj
@@ -7,6 +10,7 @@ C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\Comm
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\Graphics.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\Graphics.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\MathHelper.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\PixEditor.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\PixEditor.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\PrimitivesManager.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\PrimitivesManager.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\Rasterizer.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\Rasterizer.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\ScriptParser.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\ScriptParser.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\TextEditor.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\TextEditor.obj
