@@ -1,6 +1,6 @@
-SetResolution(15, 24, 25, true)
+SetResolution(15, 24, 25, false)
 
-black
+//black
 SetColor(0.0, 0.0, 0.0)
 for(7, 4, 0)
 for(10, 3, 1)
@@ -72,7 +72,7 @@ DrawPixel(8, 22)
 for(3, 3, 23)
 for(3, 9, 23)
 
-Red
+//Red
 SetColor(0.894, 0.097, 0.301)
 DrawPixel(4, 1)
 DrawPixel(4, 2)
@@ -84,14 +84,14 @@ for(3, 8, 4)
 for(2, 12, 4)
 for(2, 4, 21)
 
-Pink
+//Pink
 SetColor(0.902, 0.633, 0.570)
 DrawPixel(5, 1)
 DrawPixel(7, 1)
 DrawPixel(10, 1)
 DrawPixel(6, 2)
 
-Blue
+//Blue
 SetColor(0.371, 0.441, 0.945)
 for(3, 2, 3)
 for(5, 3, 4)
@@ -107,14 +107,14 @@ for(4, 3, 19)
 DrawPixel(8, 19)
 for(2, 5, 20)
 
-light grey
+//light grey
 SetColor(0.770, 0.809, 0.820)
 DrawPixel(1, 3)
 for(2, 10, 19)
 DrawPixel(9, 20)
 DrawPixel(9, 21)
 
-grey
+//grey
 SetColor(0.406, 0.508, 0.559)
 DrawPixel(2, 4)
 DrawPixel(12, 19)
@@ -123,7 +123,7 @@ for(3, 10, 21)
 DrawPixel(4, 22)
 for(3, 9, 22)
 
-Dark brown
+//Dark brown
 SetColor(0.895, 0.594, 0.453)
 DrawPixel(4, 5)
 for(2, 9, 5)
@@ -137,7 +137,7 @@ DrawPixel(5, 12)
 DrawPixel(9, 12)
 DrawPixel(7, 13)
 
-Skin brown
+//Skin brown
 SetColor(0.934, 0.672, 0.543)
 for(2, 3, 7)
 for(3, 6, 7)
@@ -157,7 +157,7 @@ DrawPixel(13, 16)
 for(2, 1, 17)
 DrawPixel(12, 17)
 
-Cheeks pink
+//Cheeks pink
 SetColor(0.910, 0.555, 0.641)
 for(2, 3, 9)
 for(2, 10, 9)
@@ -166,15 +166,18 @@ for(2, 10, 10)
 DrawPixel(4, 11)
 DrawPixel(10, 11)
 
-yellow
+//yellow
 SetColor(0.910, 0.895, 0.059)
 for(2, 3, 14)
 for(2, 10, 14)
 for(5, 5, 15)
 for(7, 4, 17)
 
-white
+//white
 SetColor(0.934, 0.934, 0.934)
 DrawPixel(1, 16)
 DrawPixel(3, 22)
+
+
+
 
