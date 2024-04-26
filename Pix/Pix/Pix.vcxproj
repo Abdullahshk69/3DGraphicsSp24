@@ -179,6 +179,7 @@
     <ClCompile Include="CmdEndDraw.cpp" />
     <ClCompile Include="CmdForLoop.cpp" />
     <ClCompile Include="CmdSetColor.cpp" />
+    <ClCompile Include="CmdSetFillMode.cpp" />
     <ClCompile Include="CmdSetResolution.cpp" />
     <ClCompile Include="CmdVarFloat.cpp" />
     <ClCompile Include="CommandDictionary.cpp" />
@@ -205,6 +206,7 @@
     <ClInclude Include="CmdEndDraw.h" />
     <ClInclude Include="CmdForLoop.h" />
     <ClInclude Include="CmdSetColor.h" />
+    <ClInclude Include="CmdSetFillMode.h" />
     <ClInclude Include="CmdSetResolution.h" />
     <ClInclude Include="CmdVarFloat.h" />
     <ClInclude Include="Command.h" />

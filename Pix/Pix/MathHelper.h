@@ -5,6 +5,8 @@
 class MathHelper
 {
 public:
+	static bool CheckEqual(const float& a, const float& b);
+
 	static float MagnitudeSquared(const Vector2& v);
 	static float MagnitudeSquared(const Vector3& v);
 	static float Magnitude(const Vector2& v);

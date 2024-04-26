@@ -5,6 +5,7 @@
 #include "CmdVarFloat.h"
 #include "CmdSetColor.h"
 #include "CmdForLoop.h"
+#include "CmdSetFillMode.h"
 
 #include "CmdBeginDraw.h"
 #include "CmdAddVertex.h"
@@ -33,6 +34,7 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdBeginDraw>();
 	RegisterCommand<CmdAddVertex>();
 	RegisterCommand<CmdEndDraw>();
+	RegisterCommand<CmdSetFillMode>();
 }
 
 TextEditor::LanguageDefinition CommandDictionary::GenerateLanguageDefinition()

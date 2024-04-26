@@ -2,10 +2,11 @@ SetResolution(50, 50, 10, true)
 
 BeginDraw(triangle)
 
-//SetFill(solid)
+SetFillMode(solid)
 
 AddVertex(2, 2, 1, 1, 0)
 AddVertex(45, 10, 0, 0, 1)
 AddVertex(15, 30, 0, 1, 0)
 
 EndDraw()
+
