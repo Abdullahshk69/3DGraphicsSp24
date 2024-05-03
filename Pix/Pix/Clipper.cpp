@@ -7,6 +7,15 @@ const short BIT_RIGHT  = 1 << 2;	// 0010		// 2
 const short BIT_BOTTOM = 1 << 3;	// 0100		// 4
 const short BIT_TOP    = 1 << 4;	// 1000		// 8
 
+enum class ClipEdge : short
+{
+	Left,
+	Top,
+	Right,
+	Bottom,
+	Count
+};
+
 short GetOutputCode(float x, float y)
 {
 	Viewport* vp = Viewport::Get();
@@ -34,6 +43,56 @@ short GetOutputCode(float x, float y)
 	}
 
 	return code;
+}
+
+bool isInFront(ClipEdge edge, const Vector3& pos)
+{
+	switch (edge)
+	{
+	case ClipEdge::Left:	return pos.x > Viewport::Get()->GetMinX();
+	case ClipEdge::Top:		return pos.y > Viewport::Get()->GetMinY();
+	case ClipEdge::Right:	return pos.x < Viewport::Get()->GetMaxX();
+	case ClipEdge::Bottom:	return pos.y < Viewport::Get()->GetMaxY();
+	default:
+		break;
+	}
+	return false;
+}
+
+Vertex ComputeIntersection(ClipEdge edge, const Vertex& v, const Vertex& vp1)
+{
+	float t = 0.0f;
+	switch (edge)
+	{
+	case ClipEdge::Left:
+	{
+		t = (Viewport::Get()->GetMinX() - v.pos.x) / (vp1.pos.x - v.pos.x);
+	}
+	break;
+
+	case ClipEdge::Top:
+	{
+		t = (Viewport::Get()->GetMinY() - v.pos.y) / (vp1.pos.y - v.pos.y);
+	}
+	break;
+
+	case ClipEdge::Right:
+	{
+		t = (Viewport::Get()->GetMaxX() - v.pos.x) / (vp1.pos.x - v.pos.x);
+	}
+	break;
+
+	case ClipEdge::Bottom:
+	{
+		t = (Viewport::Get()->GetMaxY() - v.pos.y) / (vp1.pos.y - v.pos.y);
+	}
+	break;
+
+	default:
+		break;
+	}
+
+	return LerpVertex(v, vp1, t);
 }
 
 Clipper* Clipper::Get()
@@ -147,6 +206,50 @@ bool Clipper::ClipTriangle(std::vector<Vertex>& vertices)
 	{
 		return false;
 	}
+	std::vector<Vertex> newVertices;
+	for (int edgeIndex = 0; edgeIndex < (int)ClipEdge::Count; ++edgeIndex)
+	{
+		newVertices.clear();
+		ClipEdge edge = (ClipEdge)edgeIndex;
+		for (size_t v = 0; v < vertices.size(); ++v)
+		{
+			size_t vp1 = (v + 1) % vertices.size();		// vp1 means vertex plus 1
+			const Vertex& vertex = vertices[v];
+			const Vertex& vertexP1 = vertices[vp1];
 
-	return true;
+			const bool vIsInFront = isInFront(edge, vertex.pos);
+			const bool vp1IsInFront = isInFront(edge, vertexP1.pos);
+			
+			// CASE1: both are in front
+			if (vIsInFront && vp1IsInFront)
+			{
+				newVertices.push_back(vertexP1);
+			}
+			// CASE2: both are behind
+			else if (!vIsInFront && !vp1IsInFront)
+			{
+				// dont save anything
+			}
+			// CASE3: v in front vp1 is behind
+			else if (vIsInFront && !vp1IsInFront)
+			{
+				newVertices.push_back(ComputeIntersection(edge, vertex, vertexP1));
+			}
+			// CASE4: v is behind vp1 is in front
+			else if (!vIsInFront && vp1IsInFront)
+			{
+				newVertices.push_back(ComputeIntersection(edge, vertex, vertexP1));
+				newVertices.push_back(vertexP1);
+			}
+
+			/*if (vIsInFront != vp1IsInFront)
+			{
+				newVertices.push_back(ComputeIntersection(edge, vertex, vertexP1));
+			}*/
+			
+		}
+		vertices = newVertices;
+	}
+
+	return newVertices.empty();
 }

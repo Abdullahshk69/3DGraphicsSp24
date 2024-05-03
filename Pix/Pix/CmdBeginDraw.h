@@ -13,7 +13,7 @@ public:
 	const char* GetDescription() override
 	{
 		return
-			"BeginDraw(topology\n"
+			"BeginDraw(topology)\n"
 			"\n"
 			"- begins draw.\n"
 			"- stores toplogy";

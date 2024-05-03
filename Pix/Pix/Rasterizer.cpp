@@ -14,6 +14,10 @@ void Rasterizer::SetColor(X::Color color)
 void Rasterizer::SetFillMode(FillMode fillMode)
 {
 	mFillMode = fillMode;
+
+	Matrix4 testA = Matrix4::RotationY(0.717) * Matrix4::Translation({ 1,3,0 });
+	Matrix4 testAInv = MathHelper::Inverse(testA);
+	Matrix4 identity = testA * testAInv;
 }
 
 void Rasterizer::DrawPoint(int x, int y)
@@ -116,6 +120,8 @@ void Rasterizer::DrawFilledTriangle(const Vertex& v0, const Vertex& v1, const Ve
 	{
 		for (int y = startY; y <= endY; ++y)
 		{
+			// dy < 1.0f
+			// v0, v1, v2 .posY all the same or < 1.0f
 			float t = static_cast<float>(y - startY) / dy;
 			Vertex a = LerpVertex(v0, v2, t);
 			Vertex b = LerpVertex(v1, v2, t);

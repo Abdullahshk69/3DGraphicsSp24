@@ -1,2 +1,22 @@
 ﻿  Clipper.cpp
-  Pix.vcxproj -> C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\x64\Debug\Pix.exe
+  CmdAddVertex.cpp
+  CmdBeginDraw.cpp
+  CmdDrawPixel.cpp
+  CmdEndDraw.cpp
+  CmdForLoop.cpp
+  CmdSetClipping.cpp
+  CmdSetColor.cpp
+  CmdSetFillMode.cpp
+  Graphics.cpp
+  MathHelper.cpp
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp(21,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp(26,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp(132,28): error C2352: 'MathHelper::Determinant': a call of a non-static member function requires an object
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp(84,19): message : see declaration of 'MathHelper::Determinant'
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp(132,14): error C2737: 'determinant': const object must be initialized
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp(134,9): error C2352: 'MathHelper::Adjoint': a call of a non-static member function requires an object
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp(95,21): message : see declaration of 'MathHelper::Adjoint'
+  PrimitivesManager.cpp
+  Rasterizer.cpp
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\Rasterizer.cpp(18,37): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating Code...
