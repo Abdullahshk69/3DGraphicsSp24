@@ -1,22 +1,16 @@
-﻿  Clipper.cpp
-  CmdAddVertex.cpp
-  CmdBeginDraw.cpp
-  CmdDrawPixel.cpp
-  CmdEndDraw.cpp
-  CmdForLoop.cpp
-  CmdSetClipping.cpp
-  CmdSetColor.cpp
-  CmdSetFillMode.cpp
+﻿  CmdPopMatrix.cpp
+  CmdPushRotationX.cpp
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdPushRotationX.cpp(13,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  CmdPushRotationY.cpp
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdPushRotationY.cpp(13,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  CmdPushRotationZ.cpp
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdPushRotationZ.cpp(13,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  CmdPushScaling.cpp
+  CmdPushTranslation.cpp
+  CommandDictionary.cpp
   Graphics.cpp
-  MathHelper.cpp
-C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp(21,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp(26,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp(132,28): error C2352: 'MathHelper::Determinant': a call of a non-static member function requires an object
-C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp(84,19): message : see declaration of 'MathHelper::Determinant'
-C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp(132,14): error C2737: 'determinant': const object must be initialized
-C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp(134,9): error C2352: 'MathHelper::Adjoint': a call of a non-static member function requires an object
-C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp(95,21): message : see declaration of 'MathHelper::Adjoint'
+  MatrixStack.cpp
   PrimitivesManager.cpp
-  Rasterizer.cpp
-C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\Rasterizer.cpp(18,37): warning C4305: 'argument': truncation from 'double' to 'float'
   Generating Code...
+     Creating library C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\x64\Debug\Pix.lib and object C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\x64\Debug\Pix.exp
+  Pix.vcxproj -> C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\x64\Debug\Pix.exe

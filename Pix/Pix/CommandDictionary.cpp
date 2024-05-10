@@ -15,6 +15,19 @@
 #include "CmdShowViewport.h"
 #include "CmdSetClipping.h"
 
+#include "CmdSetCameraDirection.h"
+#include "CmdSetCameraFar.h"
+#include "CmdSetCameraFOV.h"
+#include "CmdSetCameraNear.h"
+#include "CmdSetCameraPosition.h"
+
+#include "CmdPushTranslation.h"
+#include "CmdPushRotationX.h"
+#include "CmdPushRotationY.h"
+#include "CmdPushRotationZ.h"
+#include "CmdPushScaling.h"
+#include "CmdPopMatrix.h"
+
 CommandDictionary* CommandDictionary::Get()
 {
 	static CommandDictionary sInstance;
@@ -30,6 +43,21 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetViewport>();
 	RegisterCommand<CmdShowViewport>();
 	RegisterCommand<CmdSetClipping>();
+
+	// Camera Settings
+	RegisterCommand<CmdSetCameraDirection>();
+	RegisterCommand<CmdSetCameraFar>();
+	RegisterCommand<CmdSetCameraFOV>();
+	RegisterCommand<CmdSetCameraNear>();
+	RegisterCommand<CmdSetCameraPosition>();
+
+	// Matrix Setting
+	RegisterCommand<CmdPushTranslation>();
+	RegisterCommand<CmdPushRotationX>();
+	RegisterCommand<CmdPushRotationY>();
+	RegisterCommand<CmdPushRotationZ>();
+	RegisterCommand<CmdPushScaling>();
+	RegisterCommand<CmdPopMatrix>();
 
 	// Variable commands
 	RegisterCommand<CmdVarFloat>();
