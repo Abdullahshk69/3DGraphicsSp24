@@ -120,7 +120,7 @@
     <ClCompile Include="CmdBeginDraw.cpp">
       <Filter>Commands</Filter>
     </ClCompile>
-    <ClCompile Include="CmdAddVertex.cpp">
+    <ClCompile Include="CmdVertex.cpp">
       <Filter>Commands</Filter>
     </ClCompile>
     <ClCompile Include="CmdEndDraw.cpp">
@@ -242,7 +242,7 @@
     <ClInclude Include="CmdBeginDraw.h">
       <Filter>Commands</Filter>
     </ClInclude>
-    <ClInclude Include="CmdAddVertex.h">
+    <ClInclude Include="CmdVertex.h">
       <Filter>Commands</Filter>
     </ClInclude>
     <ClInclude Include="CmdEndDraw.h">

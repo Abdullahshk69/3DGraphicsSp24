@@ -2,12 +2,12 @@
 
 #include "Command.h"
 
-class CmdAddVertex : public Command
+class CmdVertex : public Command
 {
 public:
 	const char* GetName() override
 	{
-		return "AddVertex";
+		return "Vertex";
 	}
 
 	const char* GetDescription() override

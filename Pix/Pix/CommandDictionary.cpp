@@ -8,7 +8,7 @@
 #include "CmdSetFillMode.h"
 
 #include "CmdBeginDraw.h"
-#include "CmdAddVertex.h"
+#include "CmdVertex.h"
 #include "CmdEndDraw.h"
 
 #include "CmdSetViewport.h"
@@ -67,7 +67,7 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetColor>();
 	RegisterCommand<CmdForLoop>();
 	RegisterCommand<CmdBeginDraw>();
-	RegisterCommand<CmdAddVertex>();
+	RegisterCommand<CmdVertex>();
 	RegisterCommand<CmdEndDraw>();
 	RegisterCommand<CmdSetFillMode>();
 }
