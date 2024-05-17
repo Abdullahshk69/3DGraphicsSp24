@@ -20,6 +20,8 @@
 #include "CmdSetCameraFOV.h"
 #include "CmdSetCameraNear.h"
 #include "CmdSetCameraPosition.h"
+#include "CmdSetCullMode.h"
+#include "CmdEnableDepth.h"
 
 #include "CmdPushTranslation.h"
 #include "CmdPushRotationX.h"
@@ -43,6 +45,7 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetViewport>();
 	RegisterCommand<CmdShowViewport>();
 	RegisterCommand<CmdSetClipping>();
+	RegisterCommand<CmdEnableDepth>();
 
 	// Camera Settings
 	RegisterCommand<CmdSetCameraDirection>();
@@ -70,6 +73,7 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdVertex>();
 	RegisterCommand<CmdEndDraw>();
 	RegisterCommand<CmdSetFillMode>();
+	RegisterCommand<CmdSetCullMode>();
 }
 
 TextEditor::LanguageDefinition CommandDictionary::GenerateLanguageDefinition()

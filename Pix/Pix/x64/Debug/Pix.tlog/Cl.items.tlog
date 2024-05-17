@@ -1,5 +1,7 @@
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\Camera.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\Camera.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\Clipper.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\Clipper.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdEnableDepth.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdEnableDepth.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdSetCullMode.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdSetCullMode.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdVertex.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdVertex.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdBeginDraw.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdBeginDraw.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdDrawPixel.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdDrawPixel.obj
@@ -24,6 +26,7 @@ C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdS
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdShowViewport.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdShowViewport.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CmdVarFloat.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CmdVarFloat.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\CommandDictionary.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\CommandDictionary.obj
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\DepthBuffer.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\DepthBuffer.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\Graphics.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\Graphics.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MathHelper.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\MathHelper.obj
 C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\MatrixStack.cpp;C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\x64\Debug\MatrixStack.obj
