@@ -23,6 +23,9 @@
 #include "CmdSetCullMode.h"
 #include "CmdEnableDepth.h"
 
+#include "CmdLights.h"
+#include "CmdMaterial.h"
+
 #include "CmdPushTranslation.h"
 #include "CmdPushRotationX.h"
 #include "CmdPushRotationY.h"
@@ -64,6 +67,19 @@ CommandDictionary::CommandDictionary()
 
 	// Variable commands
 	RegisterCommand<CmdVarFloat>();
+
+	// Lights
+	RegisterCommand<CmdSetLightAmbient>();
+	RegisterCommand<CmdSetLightDiffuse>();
+	RegisterCommand<CmdSetLightSpecular>();
+	RegisterCommand<CmdAddDirectionalLight>();
+
+	// Material
+	RegisterCommand<CmdSetMaterialAmbient>();
+	RegisterCommand<CmdSetMaterialDiffuse>();
+	RegisterCommand<CmdSetMaterialSpecular>();
+	RegisterCommand<CmdSetMaterialEmissive>();
+	RegisterCommand<CmdSetMaterialShininess>();
 
 	// Rasterization commands
 	RegisterCommand<CmdDrawPixel>();
