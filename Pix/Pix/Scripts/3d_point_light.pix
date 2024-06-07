@@ -32,7 +32,8 @@ SetCameraDirection($camDirX, $camDirY, $camDirZ)
 SetLightAmbient(0.2, 0.2, 0.2)
 SetLightDiffuse(0.9, 0.9, 0.9)
 SetLightSpecular(0.3, 0.3, 0.3)
-AddPointLight($lightPosX, $lightPosY, $lightPosZ, $attenC, $attenL, $attenQ)
+// AddPointLight($lightPosX, $lightPosY, $lightPosZ, $attenC, $attenL, $attenQ)
+AddSpotLight($lightPosX, $lightPosY, $lightPosZ, 1, 0, 0 $attenC, $attenL, $attenQ, 30, 1)
 
 
 BeginDraw(triangle, true)
