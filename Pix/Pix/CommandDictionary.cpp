@@ -27,6 +27,10 @@
 #include "CmdLights.h"
 #include "CmdMaterial.h"
 #include "CmdModel.h"
+#include "CmdSetTexture.h"
+#include "CmdSetCorrectUV.h"
+#include "CmdSetAddressMode.h"
+#include "CmdSetUseFilter.h"
 
 #include "CmdPushTranslation.h"
 #include "CmdPushRotationX.h"
@@ -58,6 +62,7 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetCameraFOV>();
 	RegisterCommand<CmdSetCameraNear>();
 	RegisterCommand<CmdSetCameraPosition>();
+	
 
 	// Matrix Setting
 	RegisterCommand<CmdPushTranslation>();
@@ -70,6 +75,7 @@ CommandDictionary::CommandDictionary()
 	// Variable commands
 	RegisterCommand<CmdVarFloat>();
 	RegisterCommand<CmdModel>();
+	RegisterCommand<CmdSetTexture>();
 
 	// Lights
 	RegisterCommand<CmdSetLightAmbient>();
@@ -85,6 +91,11 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetMaterialSpecular>();
 	RegisterCommand<CmdSetMaterialEmissive>();
 	RegisterCommand<CmdSetMaterialShininess>();
+
+	// Texturing 
+	RegisterCommand<CmdSetCorrectUV>();
+	RegisterCommand<CmdSetAddressMode>();
+	RegisterCommand<CmdSetUseFilter>();
 
 	// Rasterization commands
 	RegisterCommand<CmdDrawPixel>();

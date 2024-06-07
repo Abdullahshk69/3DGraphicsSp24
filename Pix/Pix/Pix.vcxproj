@@ -179,9 +179,13 @@
     <ClCompile Include="CmdLights.cpp" />
     <ClCompile Include="CmdMaterial.cpp" />
     <ClCompile Include="CmdModel.cpp" />
+    <ClCompile Include="CmdSetAddressMode.cpp" />
+    <ClCompile Include="CmdSetCorrectUV.cpp" />
     <ClCompile Include="CmdSetCullMode.cpp" />
     <ClCompile Include="CmdSetLightAmbient.cpp" />
     <ClCompile Include="CmdSetShadeMode.cpp" />
+    <ClCompile Include="CmdSetTexture.cpp" />
+    <ClCompile Include="CmdSetUseFilter.cpp" />
     <ClCompile Include="CmdVertex.cpp" />
     <ClCompile Include="CmdBeginDraw.cpp" />
     <ClCompile Include="CmdDrawPixel.cpp" />
@@ -220,6 +224,8 @@
     <ClCompile Include="Rasterizer.cpp" />
     <ClCompile Include="ScriptParser.cpp" />
     <ClCompile Include="TextEditor.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
     <ClCompile Include="VariableCache.cpp" />
     <ClCompile Include="Viewport.cpp" />
     <ClCompile Include="WinMain.cpp" />
@@ -236,9 +242,13 @@
     <ClInclude Include="CmdLights.h" />
     <ClInclude Include="CmdMaterial.h" />
     <ClInclude Include="CmdModel.h" />
+    <ClInclude Include="CmdSetAddressMode.h" />
+    <ClInclude Include="CmdSetCorrectUV.h" />
     <ClInclude Include="CmdSetCullMode.h" />
     <ClInclude Include="CmdSetLightAmbient.h" />
     <ClInclude Include="CmdSetShadeMode.h" />
+    <ClInclude Include="CmdSetTexture.h" />
+    <ClInclude Include="CmdSetUseFilter.h" />
     <ClInclude Include="CmdVertex.h" />
     <ClInclude Include="CmdBeginDraw.h" />
     <ClInclude Include="CmdDrawPixel.h" />
@@ -280,6 +290,8 @@
     <ClInclude Include="Rasterizer.h" />
     <ClInclude Include="ScriptParser.h" />
     <ClInclude Include="TextEditor.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureManager.h" />
     <ClInclude Include="VariableCache.h" />
     <ClInclude Include="Vector2.h" />
     <ClInclude Include="Vector3.h" />

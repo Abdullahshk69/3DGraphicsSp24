@@ -1,5 +1,7 @@
-﻿  Camera.cpp
-  SimpleDraw.cpp
+﻿  RenderTarget.cpp
+  SpriteRenderer.cpp
+  Texture.cpp
+  TextureManager.cpp
   XEngine.cpp
   Generating Code...
   X.vcxproj -> C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\x64\Debug\X.lib

@@ -16,10 +16,10 @@ namespace
 		float hh = gResolutionY * 0.5f;
 
 		return Matrix4(
-			  hw, 0.0f, 0.0f, 0.0f,
-			0.0f,  -hh, 0.0f, 0.0f,
+			hw, 0.0f, 0.0f, 0.0f,
+			0.0f, -hh, 0.0f, 0.0f,
 			0.0f, 0.0f, 1.0f, 0.0f,
-			  hw,   hh, 0.0f, 1.0f
+			hw, hh, 0.0f, 1.0f
 		);
 	}
 
@@ -57,11 +57,17 @@ PrimitivesManager::~PrimitivesManager()
 void PrimitivesManager::OnNewFrame()
 {
 	mCullMode = CullMode::None;
+	mCorrectUV = false;
 }
 
 void PrimitivesManager::SetCullMode(CullMode mode)
 {
 	mCullMode = mode;
+}
+
+void PrimitivesManager::SetCorrectUV(bool correctUV)
+{
+	mCorrectUV = correctUV;
 }
 
 PrimitivesManager* PrimitivesManager::Get()
@@ -92,7 +98,7 @@ bool PrimitivesManager::EndDraw()
 	if (!mDrawBegin)
 	{
 		return false;
-	}	
+	}
 
 	switch (mTopology)
 	{
@@ -100,13 +106,13 @@ bool PrimitivesManager::EndDraw()
 	{
 		for (size_t i = 0; i < mVertexBuffer.size(); i++)
 		{
-			if(!Clipper::Get()->ClipPoint(mVertexBuffer[i]))
+			if (!Clipper::Get()->ClipPoint(mVertexBuffer[i]))
 			{
 				Rasterizer::Get()->DrawPoint(mVertexBuffer[i]);
 			}
 		}
 	}
-		break;
+	break;
 	case Topology::Line:
 	{
 		for (size_t i = 1; i < mVertexBuffer.size(); i += 2)
@@ -115,7 +121,7 @@ bool PrimitivesManager::EndDraw()
 				Rasterizer::Get()->DrawLine(mVertexBuffer[i - 1], mVertexBuffer[i]);
 			}
 	}
-		break;
+	break;
 	case Topology::Triangle:
 	{
 		Matrix4 matWorld = MatrixStack::Get()->GetTransform();
@@ -124,11 +130,11 @@ bool PrimitivesManager::EndDraw()
 		Matrix4 matScreen = GetScreenMatrix();
 		Matrix4 matNDC = matView * matProj;
 		LightManager* lm = LightManager::Get();
-		
+
 		for (size_t i = 2; i < mVertexBuffer.size(); i += 3)
 		{
 			std::vector<Vertex> triangle = { mVertexBuffer[i - 2], mVertexBuffer[i - 1], mVertexBuffer[i] };
-			
+
 			if (mApplyTransform)
 			{
 				// move the positions into world space
@@ -138,7 +144,7 @@ bool PrimitivesManager::EndDraw()
 					triangle[t].pos = worldPos;
 					triangle[t].posWorld = worldPos;
 				}
-				
+
 				// ensure triangle has normals
 				if (MathHelper::CheckEqual(MathHelper::MagnitudeSquared(triangle[0].norm), 0.0f))
 				{
@@ -152,13 +158,27 @@ bool PrimitivesManager::EndDraw()
 					}
 				}
 
-				// apply vertex lighting if applicable
-				if (Rasterizer::Get()->GetShadeMode() == ShadeMode::Flat || 
-					Rasterizer::Get()->GetShadeMode() == ShadeMode::Gouraud)
+				// if not a UV, add lighting
+				if (triangle[0].color.z >= 0.0f)
+				{
+					// apply vertex lighting if applicable
+					if (Rasterizer::Get()->GetShadeMode() == ShadeMode::Flat ||
+						Rasterizer::Get()->GetShadeMode() == ShadeMode::Gouraud)
+					{
+						for (size_t t = 0; t < triangle.size(); ++t)
+						{
+							triangle[t].color *= LightManager::Get()->ComputeLightColor(triangle[t].pos, triangle[t].norm);
+						}
+					}
+				}
+				else if (mCorrectUV)
 				{
 					for (size_t t = 0; t < triangle.size(); ++t)
 					{
-						triangle[t].color *= LightManager::Get()->ComputeLightColor(triangle[t].pos, triangle[t].norm);
+						Vector3 viewPos = MathHelper::TransformCoord(triangle[t].pos, matView);
+						triangle[t].color.x /= viewPos.z;
+						triangle[t].color.y /= viewPos.z;
+						triangle[t].color.w = 1.0f / viewPos.z;
 					}
 				}
 
@@ -184,7 +204,7 @@ bool PrimitivesManager::EndDraw()
 					triangle[t].pos = screenPos;
 				}
 			}
-			if(!Clipper::Get()->ClipTriangle(triangle))
+			if (!Clipper::Get()->ClipTriangle(triangle))
 			{
 				for (size_t t = 2; t < triangle.size(); ++t)
 				{
@@ -193,7 +213,7 @@ bool PrimitivesManager::EndDraw()
 			}
 		}
 	}
-		break;
+	break;
 	default:
 		break;
 	}

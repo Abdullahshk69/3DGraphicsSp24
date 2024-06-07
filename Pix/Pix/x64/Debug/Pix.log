@@ -1,1 +1,12 @@
-﻿  Pix.vcxproj -> C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\x64\Debug\Pix.exe
+﻿  CmdSetAddressMode.cpp
+  CmdSetTexture.cpp
+  CmdSetUseFilter.cpp
+  CommandDictionary.cpp
+  Rasterizer.cpp
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\Rasterizer.cpp(21,37): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\Rasterizer.cpp(43,57): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\Pix\Rasterizer.cpp(43,48): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+  TextureManager.cpp
+  Generating Code...
+     Creating library C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\x64\Debug\Pix.lib and object C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\x64\Debug\Pix.exp
+  Pix.vcxproj -> C:\Users\pc\source\repos\Semester 6\3D Graphics And Application\Pix\Pix\x64\Debug\Pix.exe
