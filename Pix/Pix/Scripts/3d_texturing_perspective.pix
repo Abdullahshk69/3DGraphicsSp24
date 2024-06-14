@@ -37,6 +37,9 @@ SetCorrectUV($correctUV)
 SetAddressMode(clamp)
 SetUseFilter(true)
 
+PostProcessingSetEffectType(blur)
+
+PostProcessingBeginDraw()
 BeginDraw(triangle, true)
 
 Vertex(-1, -1, 0, 0, 1, -1)
@@ -47,6 +50,12 @@ Vertex(1, 1, 0, 1, 0, -1)
 Vertex(1, -1, 0, 1, 1, -1)
 
 EndDraw()
+PostProcessingEndDraw()
+
+
+
+
+
 
 
 

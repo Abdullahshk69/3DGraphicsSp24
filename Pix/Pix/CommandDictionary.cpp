@@ -40,6 +40,7 @@
 #include "CmdPushRotationZ.h"
 #include "CmdPushScaling.h"
 #include "CmdPopMatrix.h"
+#include "CmdPostProcessing.h"
 
 CommandDictionary* CommandDictionary::Get()
 {
@@ -111,6 +112,11 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetFillMode>();
 	RegisterCommand<CmdSetCullMode>();
 	RegisterCommand<CmdSetShadeMode>();
+
+	// Post Processing
+	RegisterCommand<CmdPostProcessingBeginDraw>();
+	RegisterCommand<CmdPostProcessingEndDraw>();
+	RegisterCommand<CmdPostProcessingSetEffectType>();
 }
 
 TextEditor::LanguageDefinition CommandDictionary::GenerateLanguageDefinition()
