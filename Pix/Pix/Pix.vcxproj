@@ -186,6 +186,8 @@
     <ClCompile Include="CmdSetShadeMode.cpp" />
     <ClCompile Include="CmdSetTexture.cpp" />
     <ClCompile Include="CmdSetUseFilter.cpp" />
+    <ClCompile Include="CmdVarBool.cpp" />
+    <ClCompile Include="CmdVarInt.cpp" />
     <ClCompile Include="CmdVertex.cpp" />
     <ClCompile Include="CmdBeginDraw.cpp" />
     <ClCompile Include="CmdDrawPixel.cpp" />
@@ -249,6 +251,8 @@
     <ClInclude Include="CmdSetShadeMode.h" />
     <ClInclude Include="CmdSetTexture.h" />
     <ClInclude Include="CmdSetUseFilter.h" />
+    <ClInclude Include="CmdVarBool.h" />
+    <ClInclude Include="CmdVarInt.h" />
     <ClInclude Include="CmdVertex.h" />
     <ClInclude Include="CmdBeginDraw.h" />
     <ClInclude Include="CmdDrawPixel.h" />
